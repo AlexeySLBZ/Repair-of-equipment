@@ -1,0 +1,171 @@
+.repair-brands__swiper-container {
+	background-color: #F8F8F8;
+}
+
+.repair-brands__swiper-slide {
+	border: 1px solid #EAEAEA;
+	background-color: #fff;
+	display: flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	flex-direction: row;
+	-webkit-box-orient: row;
+	justify-content: space-between;
+	-webkit-box-pack: space-between;
+	border-radius: 6px;
+	max-height: 72px;
+	margin: 0 auto 40px auto;
+}
+
+.repair-brands__swiper-slide:first-child {
+	margin-left: 16px;
+}
+
+.repair-brands__list-wrap {
+	padding-left: 0;
+}
+
+.repair-brands__swiper-slide-img {
+	float: left;
+	cursor: pointer;
+	margin: 16px;
+}
+
+.repair-brands__slider-button {
+	float: right;
+	cursor: pointer;
+	transition: background-color, 0.5s;
+	border-radius: 50%;
+	cursor: pointer;
+	margin: 16px 16px 16px 0px;
+	height: 40px;
+	width: 40px;
+	background-image: url("../img/go.svg");
+	background-repeat: no-repeat;
+}
+
+.repair-brands__slider-button:hover,
+.repair-brands__slider-button:focus {
+	background-color: #B5B6BC;
+}
+
+.repair-brands__pagination-bullet-size > span {
+	height: 12px;
+	width: 12px;
+	background-color: #DDDDDD;
+	opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: #B5B6BC !important;
+}
+
+/* 768+ */
+
+.repair-brands--hide {
+	display: none;
+}
+
+@media only screen and (min-width: 768px) {
+	.repair-brands__list-item--hidden {
+		display: none;
+	}
+	.repair-brands--hide {
+		display: block;
+	}
+	.repair-brands__list-wrap {
+		transform: translateX(0px) !important;
+		-ms-transform: translateX(0px) !important;
+		-webkit-transform: translateX(0px) !important;
+		-moz-transform: translateX(0px) !important;
+		-o-transform: translateX(0px) !important;
+	}
+	.repair-brands__list-item-img {
+		margin-left: 16px;
+		cursor: pointer;
+	}
+	.repair-brands__slider-button {
+		margin-right: 16px;
+		transition: background-color, 0.5s;
+		border-radius: 50%;
+		cursor: pointer;
+	}
+	.repair-brands__slider-button:hover,
+	.repair-brands__slider-button:focus {
+		background-color: #B5B6BC;
+	}
+
+	.repair-brands__list-item:first-child {
+		margin-left: 0;
+	}
+
+	.repair-brands__swiper-container {
+		padding: 0px 24px;
+	}
+
+	.repair-brands__list-wrap {
+		background-color: #F8F8F8;
+		display: flex;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		flex-direction: row;
+		-webkit-box-orient: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		-webkit-box-pack: flex-start;
+		padding-left: 0px;
+	}
+	.repair-brands__list-item {
+		border: 1px solid #EAEAEA;
+		width: calc(33.3% - 16px);
+		margin-left: 0;
+		height: 72px;
+		margin-bottom: 16px;
+		border-radius: 6px;
+		display: flex;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		flex-direction: row;
+		-webkit-box-orient: row;
+		align-items: center;
+		-webkit-box-align: center;
+		justify-content: space-between;
+		-webkit-box-pack: space-between;
+		background-color: #FFFFFF;
+	}
+
+	.repair-brands__list-item:nth-of-type(3n) {
+		margin-right: 0px;
+	}
+
+	.swiper-pagination {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 1120px) {
+	.repair-brands__swiper-container {
+		max-width: 1120px;
+	}
+	.repair-brands__list-item {
+		width: calc(25% + 4px - 24px);
+	}
+	.repair-brands__list-item--hidden:nth-of-type(-n+8) {
+		display: flex;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+	}
+	.repair-brands__list-item:not(:nth-of-type(3n)) {
+		margin-right: 0px;
+	}
+	.repair-brands__list-item:not(:nth-of-type(4n)) {
+		margin-right: 24px;
+	}
+	.repair-brands__list-item:nth-of-type(4n) {
+		margin-right: 0px;
+	}
+}
